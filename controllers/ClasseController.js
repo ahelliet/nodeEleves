@@ -30,8 +30,6 @@ let findClasse = async function (req, res) {
   try {
     var classe = await Classe.findOne({_id: req.params.classe_id})
     .populate("eleves")
-    console.log(classe.populated("eleves"));
-    console.log(classe);
     if (classe.populated('eleves')) {
       res.status(200).json({ classe : classe })
     } else {
