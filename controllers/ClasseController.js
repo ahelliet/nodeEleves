@@ -3,7 +3,6 @@ mongoose.set("useFindAndModify", false);
 
 // Importation du modèle
 let Classe = require("../models/ClasseModel.js");
-let Eleve = require("../models/EleveModel.js");
 
 /* Méthodes */
 // Récupérer la liste des classes
